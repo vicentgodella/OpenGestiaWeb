@@ -1,0 +1,12 @@
+{
+    "name": "VicentGodella/OpenGestiaWeb",
+    "description": "Official web for OpenGestia project",
+    "authors": [
+        {
+            "name": "Vicent Soria",
+            "email": "vicentgodella@gmail.com"
+        }
+    ],
+    "require": {
+    }
+}
