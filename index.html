@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -44,8 +44,19 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="#">Inicio</a></li>
-              <li><a href="https://bitbucket.org/vicentgodella/opengestiaweb">Código Fuente</a></li>
-              <li><a href="#">Jira</a></li>
+              <li class="dropdown">
+                <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Código Fuente<b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                  <li><a tabindex="-1" href="https://bitbucket.org/vicentgodella/opengestia">Aplicación</a></li>
+                  <li class="divider"></li>
+                  <li><a tabindex="-1" href="https://bitbucket.org/vicentgodella/opengestiaweb">Esta web</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <!-- <a href="https://bitbucket.org/vicentgodella/opengestiaweb">Código Fuente</a> -->
+              </li>
+              <li><a href="https://opengestia.atlassian.net/secure/Dashboard.jspa">Jira</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -56,52 +67,59 @@
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
         <h1>Open Gestia</h1>
+
         <p>Open Gestia es una aplicación en entorno web para gestionar asociaciones.</p>
         <p>Creada a partir de las necesidades de la asociación juvenil <a href="http://www.juniorsmd.org">Juniors M.D.</a></p>
-
-        <p>Actualmente se encuentra en fase inicial de desarrollo.</p>
+        <p>Actualmente se encuentra en fase de desarrollo.</p>
       </div>
 
       <!-- Example row of columns -->
       <div class="row">
-        <div class="span4">
+        <div class="span6">
           <h2>Metodologías Ágiles</h2>
-           <p>Construido con metodologías ágiles, y definiendo la funcionalidad a partir de las historias de usuario que se nos proponen desde Juniors M.D.</p>
+           <p>Este proyecto está siendo construido con metodologías ágiles, y definiendo la funcionalidad a partir de las historias de usuario que se nos proponen desde Juniors M.D.</p>
         </div>
-        <div class="span4">
+        <div class="span6">
           <h2>Testing</h2>
-           <p>Para su desarrollo, nos basamos en BDD, integración continua, ...</p>
+          <p>Para su desarrollo, nos estamos basamos en BDD, TDD, tests unitarios, integración continua, ...</p>
        </div>
-        <div class="span4">
+      </div>
+      <div class="row">
+        <div class="span6">
+          <h2>Desarrollo en Symfony 2</h2>
+          <p>Este proyecto está siendo desarrollado en PHP, concretamente utilizando Symfony 2.1.</p>
+          <p><img src="img/logo_sf.png" /></p>
+        </div>
+        <div class="span6">
           <h2>Proyecto Final de Carrera</h2>
           <p>Este proyecto es mi proyecto de final de carrera</p>
         </div>
       </div>
 
       <hr>
+      <div class="row">
+        <div class="span12">
+          El diseño utilizado ha sido descargado de <a href="http://bootswatch.com">bootswatch.com</a>. El tema elegido es:  <a href="http://bootswatch.com/slate/">Slate</a>
+        </div>
+      </div>
 
-      <footer>
-        <p>&copy; Vicent Soria 2012</p>
+      <hr>
+      <footer class="row">
+        <div class="span6">
+          Vicent Soria - 2012
+        </div>
+        <div class="span6" style="text-align:right;">
+          <a href="https://twitter.com/vicentgodella"><img src="img/twitter-bird-light-bgs.png" width="30px"/></a> 
+          <a href="mailto:vicentgodella@gmail.com"><i class="icon-envelope icon-white"></i></a>
+        </div>
+
+
       </footer>
 
     </div> <!-- /container -->
 
-    <!-- Le javascript
-    ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
-    <script src="../assets/js/bootstrap-alert.js"></script>
-    <script src="../assets/js/bootstrap-modal.js"></script>
-    <script src="../assets/js/bootstrap-dropdown.js"></script>
-    <script src="../assets/js/bootstrap-scrollspy.js"></script>
-    <script src="../assets/js/bootstrap-tab.js"></script>
-    <script src="../assets/js/bootstrap-tooltip.js"></script>
-    <script src="../assets/js/bootstrap-popover.js"></script>
-    <script src="../assets/js/bootstrap-button.js"></script>
-    <script src="../assets/js/bootstrap-collapse.js"></script>
-    <script src="../assets/js/bootstrap-carousel.js"></script>
-    <script src="../assets/js/bootstrap-typeahead.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>
